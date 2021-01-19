@@ -1,0 +1,20 @@
+apiVersion: tools.swoll.criticalstack.com/v1alpha1
+kind: Trace
+metadata:
+  generatedName: swoll-argo-test-
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+spec:
+  syscalls:
+    - openat
+    - execve
+    - socket
+    - accept4
+    - listen
+    - bind
+    - connect
+  labelSelector:
+      matchLabels:
+          app: guestbook-ui
+
