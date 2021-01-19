@@ -4,8 +4,8 @@ metadata:
   name: swoll-argo-test
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
+  duration: 5m
   syscalls:
     - openat
     - execve
