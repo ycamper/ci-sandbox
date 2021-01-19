@@ -1,7 +1,7 @@
 apiVersion: tools.swoll.criticalstack.com/v1alpha1
 kind: Trace
 metadata:
-  generatedName: swoll-argo-test-
+  name: swoll-argo-test
   annotations:
     argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
